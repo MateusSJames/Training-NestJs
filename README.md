@@ -58,16 +58,28 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Desenvolvedor - Mateus Aristides
 
-## License
+## Description
 
-Nest is [MIT licensed](LICENSE).
+Essa é uma aplicação apenas para treinamento dos conceitos básicos de Nest, tais como: Modules, Services, Controllers, DTOs. É uma aplicação para gerenciamento de cursos, ao qual temos 5 rotas, para find all, find one, create, update e remove em memória, para testar tais rotas siga a seguinte rotina:
+
+- Find All (rota: http://localhost:3000/courses)
+- Find One (rota: http://localhost:3000/courses/id)
+- Create (rota: http://localhost:3000/courses)
+  - Payload: {
+	    "id": 1,
+	    "name": "Hello World",
+	    "description": "Hello World, NestJS",
+  	  "tags": ["test", "test"]
+}
+- Update (rota: http://localhost:3000/courses/id)
+  - Payload: {
+	    "name": "Hello World",
+	    "description": "Hello World, NestJS",
+  	  "tags": ["test", "test"]
+  } 
+  
+- Delete (rota: http://localhost:3000/courses/id)
